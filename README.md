@@ -66,7 +66,7 @@ Different models have genuinely different priors. A cautious Claude persona hedg
 Get your council running locally in under 60 seconds:
 
 ```bash
-git clone https://github.com/your-username/ai-council.git
+git clone https://github.com/meisamsharahi/aiCouncil.git
 cd ai-council
 npm install
 npm run dev
