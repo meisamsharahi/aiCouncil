@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-base: #1a1928;
+  --bg-surface-1: #252437;
+  --bg-surface-2: #2f2d47;
+  --bg-surface-3: #39365a;
+  --bg-sidebar: #1e1c30;
+  --border: #3d3b5c;
+  --border-subtle: #2c2a42;
+  --accent: #6264a7;
+  --accent-hover: #7b83eb;
+  --text-primary: #f5f5f5;
+  --text-secondary: #b0afc8;
+  --text-muted: #78788a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--bg-base);
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+}
+
+body {
+  font-family: "Segoe UI", "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5856a0;
+}
+
+/* Streaming cursor animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+.streaming-cursor::after {
+  content: "▋";
+  animation: blink 1s step-start infinite;
+  color: var(--accent);
+  margin-left: 1px;
+}
