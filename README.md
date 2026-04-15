@@ -67,7 +67,7 @@ Get your council running locally in under 60 seconds:
 
 ```bash
 git clone https://github.com/meisamsharahi/aiCouncil.git
-cd ai-council
+cd aiCouncil 
 npm install
 npm run dev
 ```
